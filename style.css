@@ -1,0 +1,43 @@
+body {
+    font-family: 'Meiryo';
+    font-weight: bold;
+    margin: 20px;
+    background-color: #FFB6C1; /* 淡いピンク色 */
+}
+
+h1 {
+    color: rgb(35, 16, 86);
+    font-family: "Meiryo";
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid #ddd;
+    display: flex; /* ボタンを横に並べる */
+    align-items: center; /* 中央揃え */
+}
+
+.completed {
+    text-decoration: line-through; /* 完了したタスクに二重線 */
+    text-decoration-thickness: 2px;
+    text-decoration-color: gray;
+    color: lightslategray; /* 完了したタスクの色を薄く */
+    background-color: whitesmoke;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
