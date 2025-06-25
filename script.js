@@ -45,7 +45,7 @@ document.getElementById("addTodo").addEventListener("click", function() {
         editButton.addEventListener("click", function() {
             const newText = prompt("タスク内容を変更:", todoText);　　　//prompt(メッセージ, デフォルト)でポップアップ
             if (newText) {
-                li.firstChild.nodeValue = newText; // テキストのみを更新（ボタンを残す）、ここがまだ分からない
+                li.firstChild.nodeValue = newText; // テキストのみを更新（ボタンを残す）
             }
         });
 
