@@ -30,7 +30,7 @@ li {
 }
 
 .completed {
-    text-decoration: line-through; /* 完了したタスクに二重線 */
+    text-decoration: line-through; /* 完了したタスクを消す */
     text-decoration-thickness: 2px;
     text-decoration-color: gray;
     color: lightslategray; /* 完了したタスクの色を薄く */
