@@ -36,8 +36,8 @@ document.getElementById("addTodo").addEventListener("click", function() {
         completeButton.addEventListener("click", function() {
             li.classList.toggle("completed"); // li要素に、comletedクラス名を追加（完了/未完了を切り替え)⇒cssで呼び出すため
             allComplete();
-            
         });
+        li.appendChild(completeButton); 
 
         // 変更ボタン
         const editButton = document.createElement("button");
@@ -48,6 +48,7 @@ document.getElementById("addTodo").addEventListener("click", function() {
                 li.firstChild.nodeValue = newText; // テキストのみを更新（ボタンを残す）
             }
         });
+        li.appendChild(editButton);
 
         // 削除ボタン
         const deleteButton = document.createElement("button");
@@ -56,13 +57,11 @@ document.getElementById("addTodo").addEventListener("click", function() {
             li.remove(); // リストから削除
             allComplete();
         });
-
-        // ボタンをリストアイテムに追加
-        li.appendChild(completeButton);   //親要素.appendChild(追加するもの)
-        li.appendChild(editButton);
         li.appendChild(deleteButton);
-        document.getElementById("todoList").appendChild(li);
-        todoInput.value = ""; // 入力フィールドをクリア
+
+        // リストを画面に追加
+        document.getElementById("todoList").appendChild(li);　　 //親要素.appendChild(追加するもの)
+        todoInput.value = ""; // 追加したら入力フィールドをクリア
 
         allComplete();
     }})
